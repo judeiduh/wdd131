@@ -1,0 +1,316 @@
+/* 
+ * CSS Variables Declaration
+ * Using CSS custom properties (variables) to maintain consistent styling across the site
+ * This makes it easy to update colors and styles in one place
+ */
+ :root {
+    --primary-color: #1e5180; /* Dark blue to match the wireframe */
+    --secondary-color: #ffffff; /* White for card background */
+    --text-color: #333; /* Dark gray for main text */
+    --link-color: white; /* White for links in dark areas */
+    --hover-color: #333; /* Darker hover color for nav */
+    --font-family: "Roboto", sans-serif; /* Main font family */
+    --accent-color: #333333; /* Dark gray for nav bar */
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+/* 
+ * Body Styles
+ * Base styles for the entire document
+ */
+body {
+    font-family: var(--font-family); /* Apply the font family from variables */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light gray background */
+    color: var(--text-color); /* Set the text color from variables */
+    line-height: 1.6; /* Improve text readability with line spacing */
+}
+
+/* 
+ * Header Styles
+ * Styles for the top banner with site title
+ */
+header {
+    background-color: var(--primary-color); /* Blue background from variables */
+    color: var(--link-color); /* White text from variables */
+    padding: 1rem 0; /* Add space above and below (16px) */
+    text-align: center; /* Center the header text */
+}
+
+/* 
+ * Main Heading Style
+ * Style for the site title in the header
+ */
+header h1 {
+    margin: 0; /* Remove default margin */
+    font-family: 'Big Shoulders Stencil', sans-serif; /* Special font for headings */
+    font-weight: 700; /* Bold font weight */
+}
+
+/* 
+ * Navigation Bar Styles
+ * Styles for the top navigation menu
+ */
+nav {
+    background-color: var(--accent-color); /* Dark gray background from variables */
+    padding: 0.5rem 0; /* Add space above and below (8px) */
+}
+
+/* 
+ * Navigation List Styles
+ * Create a horizontal navigation menu
+ */
+nav ul {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    max-width: 1200px; /* Limit width to match main content */
+    margin: 0 auto; /* Center the navigation */
+}
+
+/* 
+ * Navigation List Item Styles
+ */
+nav ul li {
+    margin: 0; /* Remove default margin */
+}
+
+/* 
+ * Navigation Link Styles
+ * Style for the links in the navigation bar
+ */
+nav ul li a {
+    color: var(--link-color); /* White text from variables */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Add space around links (8px top/bottom, 16px left/right) */
+    display: block; /* Make the entire area clickable */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* 
+ * Navigation Link Hover and Active States
+ * Styles for when links are hovered over or active
+ */
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--hover-color); /* Darker background on hover */
+}
+
+/* 
+ * Main Content Styles
+ * Container for the main content area
+ */
+main {
+    max-width: 1200px; /* Limit width for readability */
+    margin: 2rem auto; /* Center content and add space (32px top/bottom) */
+    padding: 0 1rem; /* Add side padding (16px left/right) */
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between flex items */
+}
+
+/* 
+ * Card Styles
+ * Common styles for content cards
+ */
+.card {
+    background-color: var(--secondary-color); /* White background from variables */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: var(--box-shadow); /* Add subtle shadow from variables */
+    overflow: hidden; /* Ensure content doesn't break the rounded corners */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* 
+ * Main Section Card Styles
+ * The primary content area takes up available space
+ */
+section.card {
+    flex: 1; /* Allow the section to grow and fill available space */
+}
+
+/* 
+ * Sidebar Card Styles
+ * The sidebar has a fixed width
+ */
+aside.card {
+    flex: 0 0 320px; /* Fixed width: don't grow, don't shrink, 320px width */
+}
+
+/* 
+ * Card Heading Styles
+ * Style for the heading of each card
+ */
+.card h2 {
+    background-color: var(--primary-color); /* Blue background from variables */
+    color: var(--link-color); /* White text from variables */
+    margin: 0; /* Remove default margin */
+    padding: 1rem; /* Add space around text (16px) */
+    text-align: center; /* Center the heading text */
+    font-weight: normal; /* Remove bold */
+}
+
+/* 
+ * Subheading Styles
+ * Style for subheadings inside cards
+ */
+.card h3 {
+    margin-top: 2rem; /* Add space above (32px) */
+    text-align: center; /* Center the text */
+    border-top: 1px solid #eee; /* Add light top border */
+    border-bottom: 1px solid #eee; /* Add light bottom border */
+    background-color: transparent; /* Transparent background */
+    color: var(--text-color); /* Text color from variables */
+    padding: 0.5rem 0; /* Add space above and below (8px) */
+}
+
+/* 
+ * Content Container Styles
+ * Container for card content with padding
+ */
+.content-container {
+    padding: 1.5rem; /* Add space around content (24px) */
+}
+
+/* 
+ * Profile Image Styles
+ * Float the profile image to the right of text
+ */
+.content-container > img:first-of-type {
+    float: right; /* Float image to the right */
+    width: 150px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 1.5rem; /* Add space to the left (24px) */
+    margin-bottom: 1rem; /* Add space below (16px) */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* 
+ * Location Image Container Styles
+ * Float the figure to the left of text
+ */
+figure {
+    float: left; /* Float figure to the left */
+    margin: 0 1.5rem 1rem 0; /* Add space to the right and bottom (24px right, 16px bottom) */
+    max-width: 180px; /* Limit width */
+}
+
+/* 
+ * Location Image Styles
+ * Style for the location image
+ */
+figure img {
+    width: 100%; /* Fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Add light border */
+}
+
+/* 
+ * Image Caption Styles
+ * Style for the caption below the image
+ */
+figcaption {
+    text-align: center; /* Center the text */
+    font-style: italic; /* Italicize the text */
+    font-size: 0.9em; /* Slightly smaller text */
+    margin-top: 0.5rem; /* Add space above (8px) */
+}
+
+/* 
+ * Web Development Resources List Styles
+ * Style for the list in the sidebar
+ */
+aside ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 2rem; /* Add left padding (32px) */
+    margin-top: 1rem; /* Add space above (16px) */
+}
+
+/* 
+ * Resource List Item Styles
+ * Add space between list items
+ */
+aside li {
+    margin-bottom: 0.8rem; /* Add space below (12.8px) */
+}
+
+/* 
+ * Resource Link Styles
+ * Style for the links in the resources section
+ */
+aside a {
+    color: var(--primary-color); /* Blue text from variables */
+    text-decoration: none; /* Remove underline */
+}
+
+/* 
+ * Resource Link Hover Styles
+ * Add underline on hover
+ */
+aside a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* 
+ * Footer Styles
+ * Style for the page footer
+ */
+footer {
+    background-color: var(--primary-color); /* Blue background from variables */
+    color: var(--link-color); /* White text from variables */
+    text-align: center; /* Center the text */
+    padding: 1rem 0; /* Add space above and below (16px) */
+    width: 100%; /* Full width */
+}
+
+/* 
+ * Footer Paragraph Styles
+ * Reduce space between footer paragraphs
+ */
+footer p {
+    margin: 0.3rem 0; /* Add minimal space above and below (4.8px) */
+}
+
+/* 
+ * Paragraph Styles
+ * Add space between paragraphs
+ */
+p {
+    margin-bottom: 1rem; /* Add space below (16px) */
+}
+
+/* 
+ * Responsive Styles for Tablets
+ * Adjust layout for screens smaller than 900px
+ */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    aside.card {
+        flex: auto; /* Allow the sidebar to resize */
+        width: 100%; /* Full width */
+    }
+}
+
+/* 
+ * Responsive Styles for Mobile
+ * Adjust layout for screens smaller than 600px
+ */
+@media (max-width: 600px) {
+    .content-container > img:first-of-type {
+        float: none; /* Remove float */
+        display: block; /* Block display */
+        margin: 0 auto 1.5rem; /* Center the image and add space below (24px) */
+        max-width: 80%; /* Limit width to 80% of container */
+    }
+    
+    figure {
+        float: none; /* Remove float */
+        margin: 1.5rem auto; /* Center the figure and add space above and below (24px) */
+        text-align: center; /* Center the text */
+        max-width: 80%; /* Limit width to 80% of container */
+    }
+}
