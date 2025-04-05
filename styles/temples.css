@@ -37,7 +37,7 @@ nav {
     text-decoration: none;
 }
 
-.navigation li a:hover { 
+.navigation li a:hover   { 
     background-color: #555;
 }
 
@@ -52,7 +52,7 @@ nav {
 
 main {
     padding: 1rem;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
 }
 

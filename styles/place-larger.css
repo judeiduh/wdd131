@@ -1,0 +1,66 @@
+@media(max-width:600px){
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    main{
+        background-image: url(/images/hero-large.jpg);
+        background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  flex-grow: 3;
+          
+    }
+
+    #data{
+        width: 460px;
+        height:400px;
+        margin: 0%;
+        border: none;
+        background: none;
+        border-bottom: 1px solid;
+        
+    }
+
+    #Weather{
+        width: 460px;
+        height: auto;
+        margin: 0%;
+        border: none;
+        background: none;
+    
+    }
+
+
+    }
+
+    .hero picture img{
+        display: flex;
+        width: 450px;
+        height: 500px;
+        object-fit:contain;
+        justify-content:center;
+    
+
+    }
+
+    .fav-img{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 100px;
+    }
+
+    footer{
+        padding-bottom: 20px;
+    }
+
+    h2{
+        background: none;
+    }         
