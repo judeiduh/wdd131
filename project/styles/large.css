@@ -1,0 +1,42 @@
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    :root {
+      --font-size: 18px;
+      --spacing-unit: 1.5rem;
+    }
+  
+    .container {
+      max-width: 1200px;
+    }
+  
+    .hero-content h1 {
+      font-size: 4.5rem;
+    }
+  
+    .feature-card {
+      flex: 1 1 calc(33.333% - var(--spacing-unit));
+    }
+  
+    .condition-card {
+      flex: 1 1 calc(33.333% - var(--spacing-unit));
+    }
+  
+    .footer-logo, .footer-contact, .footer-links, .footer-social {
+      flex: 1 1 calc(25% - var(--spacing-unit));
+    }
+  
+    /* About Page */
+    .facility-card {
+      flex: 1 1 calc(33.333% - var(--spacing-unit));
+    }
+  
+    .tier-card {
+      flex: 1 1 calc(33.333% - var(--spacing-unit));
+    }
+  
+    /* Contact Page */
+    .instructor-card {
+      flex: 1 1 calc(33.333% - var(--spacing-unit));
+      max-width: 300px;
+    }
+  }

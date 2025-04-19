@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Arise Golf Club's history, facilities, and membership options">
+    <title>Arise Golf Club | About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Arise Golf Club Logo" width="150" height="100" loading="lazy">
+            </a>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/about-hero-small.jpg">
+                <source media="(min-width: 768px)" srcset="images/about-hero-medium.jpg">
+                <img src="images/about-hero-small.jpg" alt="Golf course aerial view" loading="eager">
+            </picture>
+            <div class="hero-content">
+                <h1>About Arise Golf Club</h1>
+                <p>Discover our rich history and world-class facilities</p>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="history-content">
+                <h2>Our History</h2>
+                <p>Founded in 2022, Arise Golf Club was designed by renowned architect Jude Iduh. with the vision of creating a championship course that would challenge golfers of all skill levels while preserving the natural beauty of the landscape.</p>
+                <p>For a fews years now, we've hosted numerous professional and amateur tournaments, earning a reputation as one of the premier golf destinations in the region. Our commitment to excellence extends beyond the course to our clubhouse, practice facilities, and member experience.</p>
+            </div>
+            <div class="history-image">
+                <img src="./images/clubhouse.jpg" alt="Arise golf club house" loading="eager" style="width: auto;object-fit: cover; height: 300px;">
+        
+            </div>
+        </section>
+
+        <section class="facilities">
+            <h2>Our Facilities</h2>
+            <div class="facilities-grid">
+                <article class="facility-card">
+                    <img src="images/course.jpg" alt="Golf course" loading="lazy">
+                    <h3>Championship Course</h3>
+                    <p>18 holes, par 72, 7,200 yards from the back tees with multiple tee options for all skill levels.</p>
+                </article>
+                <article class="facility-card">
+                    <img src="images/practice-area.jpeg" alt="Practice area" loading="lazy">
+                    <h3>Practice Facilities</h3>
+                    <p>Driving range with 40 stations, short game area with bunkers, and putting greens replicating course conditions.</p>
+                </article>
+                <article class="facility-card">
+                    <img src="images/clubhouse-interior.webp" alt="Clubhouse interior" loading="lazy">
+                    <h3>Clubhouse</h3>
+                    <p>20,000 square feet featuring dining, locker rooms, pro shop, and event spaces with panoramic views.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="membership" class="membership">
+            <h2>Membership Options</h2>
+            <div class="membership-tiers">
+                <div class="tier-card">
+                    <h3>Full Golf</h3>
+                    <p class="price">$10,000/year</p>
+                    <ul>
+                        <li>Unlimited golf</li>
+                        <li>Priority tee times</li>
+                        <li>Full clubhouse privileges</li>
+                        <li>Access to all member events</li>
+                        <li>Complimentary range balls</li>
+                    </ul>
+                    <a href="contact.html" class="secondary-button">Inquire</a>
+                </div>
+                <div class="tier-card">
+                    <h3>Weekday</h3>
+                    <p class="price">$7,500/year</p>
+                    <ul>
+                        <li>Monday-Friday golf</li>
+                        <li>Afternoon weekends/holidays</li>
+                        <li>Full clubhouse privileges</li>
+                        <li>Access to most member events</li>
+                        <li>Discounted range balls</li>
+                    </ul>
+                    <a href="contact.html" class="secondary-button">Inquire</a>
+                </div>
+                <div class="tier-card">
+                    <h3>Junior</h3>
+                    <p class="price">$3,500/year</p>
+                    <ul>
+                        <li>For members under 40</li>
+                        <li>Unlimited golf</li>
+                        <li>Full clubhouse privileges</li>
+                        <li>Graduates to Full Golf at 40</li>
+                        <li>Discounted instruction</li>
+                    </ul>
+                    <a href="contact.html" class="secondary-button">Inquire</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="Arise Golf Club Logo" width="120" height="80" loading="lazy">
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>20 somachi Road</p>
+                <p>Owerri, Nigeria</p>
+                <p>Phone: (+234) 8061792354</p>
+                <p>Email: info@arisegolfclub.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.jpg" alt="Facebook" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/instagram.webp" alt="Instagram" width="32" height="32" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>✨Jude Iduh✨ Arise Golf Club.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

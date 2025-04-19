@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arise Golf Club - Premium golfing experience with world-class facilities and instruction">
+    <title>Arise Golf Club | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Arise Golf Club Logo" width="150" height="100" loading="lazy">
+            </a>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+                <img src="./images/Hero-small.jpg" alt="Golf club hero-small" loading="eager" style="width: auto; height: 300px;">
+            <!-- <picture>
+                <source media="(min-width: 1024px)" srcset="images/hero-large.jpeg">
+                <source media="(min-width: 768px)" srcset="images/hero-medium.jpeg">
+            </picture> -->
+            <div class="hero-content">
+                <h1>Elevate Your Game</h1>
+                <p>Experience championship golf at Arise Golf Club</p>
+                <a href="contact.html" class="cta-button">Book a Tee Time</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <img src="images/membership.png" alt="Golf club membership" loading="lazy">
+                <h2>Membership</h2>
+                <p>Join our exclusive community with benefits including unlimited golf, clubhouse access, and member events.</p>
+                <a href="about.html#membership" class="secondary-button">Learn More</a> 
+            </div>
+            <div class="feature-card">
+                <img src="images/tee-times.jpg" alt="Golfers on tee box" loading="lazy">
+                <h2>Tee Times</h2>
+                <p>Book your perfect round with our easy online reservation system. Members receive priority booking.</p>
+                <a href="contact.html" class="secondary-button">Book Now</a>
+            </div>
+            <div class="feature-card">
+                <img src="images/lessons.jpg" alt="Golf instructor with student" loading="lazy">
+                <h2>Lessons</h2>
+                <p>Improve your game with our PGA-certified instructors. Programs for all skill levels available.</p>
+                <a href="contact.html#lessons" class="secondary-button">Schedule Lesson</a>
+            </div>
+        </section>
+
+        <section class="course-conditions">
+            <h2>Course Conditions</h2>
+            <div class="conditions-container">
+                <div class="condition-card">
+                    <h3>Greens</h3>
+                    <p>Fast (11.5 on stimpmeter)</p>
+                    <p>Last cut: Today 6:00 AM</p>
+                </div>
+                <div class="condition-card">
+                    <h3>Fairways</h3>
+                    <p>Firm, excellent condition</p>
+                    <p>Last cut: Yesterday</p>
+                </div>
+                <div class="condition-card">
+                    <h3>Weather</h3>
+                    <p>80°F, Sunny</p>
+                    <p>Wind: 8 mph SE</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div id="events-container">
+                <!-- JavaScript will populate this -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="Arise Golf Club Logo" width="120" height="80" loading="lazy">
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>20 Somachi Road</p>
+                <p>Owerri, Nigeria</p>
+                <p>Phone: (+234) 8061792354</p> 
+                <p>Email: info@arisegolfclub.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.jpg" alt="Facebook" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/instagram.webp" alt="Instagram" width="32" height="32" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>✨Jude Iduh✨ Arise Golf Club.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>

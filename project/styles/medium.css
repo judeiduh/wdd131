@@ -1,0 +1,128 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+      --font-size: 17px;
+      --spacing-unit: 1.25rem;
+    }
+  
+    .container {
+      max-width: 720px;
+      padding: 0;
+    }
+  
+    #menu-button {
+      display: none;
+    }
+  
+    nav {
+      display: block;
+      position: static;
+      width: auto;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      gap: calc(var(--spacing-unit) * 1.5);
+      padding: 0;
+    }
+  
+    .nav-links li {
+      margin-bottom: 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 3.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.5rem;
+    }
+  
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-unit);
+    }
+  
+    .feature-card {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+      margin-bottom: 0;
+    }
+  
+    .conditions-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .condition-card {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+    }
+  
+    .footer-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .footer-logo, .footer-contact, .footer-links, .footer-social {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+    }
+  
+    /* About Page */
+    .history {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .history-content, .history-image {
+      flex: 1 1 50%;
+    }
+  
+    .facilities-grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .facility-card {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+    }
+  
+    .membership-tiers {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .tier-card {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+    }
+  
+    /* Contact Page */
+    .contact-container {
+      flex-direction: row;
+    }
+  
+    .contact-info, .contact-form-container {
+      flex: 1 1 50%;
+    }
+  
+    .contact-info {
+      order: 1;
+      padding-right: var(--spacing-unit);
+    }
+  
+    .contact-form-container {
+      order: 2;
+      padding-left: var(--spacing-unit);
+    }
+  
+    .instructors {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .instructor-card {
+      flex: 1 1 calc(50% - var(--spacing-unit));
+    }
+  }

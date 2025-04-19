@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Arise Golf Club for tee times, membership information, and lessons">
+    <title>Arise Golf Club | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Arise Golf Club Logo" width="150" height="100" loading="lazy">
+            </a>
+            <button id="menu-button" aria-label="Toggle navigation menu">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/contact-hero-large.jpg">
+                <source media="(min-width: 768px)" srcset="images/contact-hero-medium.jpg">
+                <img src="images/contact-hero-small.jpg"alt="Golfers on the course" loading="eager" style="width: auto; object-fit: cover; height: 400px;">
+            </picture>
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>We're here to help with all your golfing needs</p>
+            </div>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Visit Us</h2>
+                <address>
+                    <p><strong>Arise Golf Club</strong></p>
+                    <p>20 Somachi Road</p>
+                    <p>Owerri, Imo state Nigeria</p>
+                    <p>Phone: <a href="tel:+2348061792354">(+234)8061-792354</a></p>
+                    <p>Email: <a href="mailto:info@arisegolfclub.com">info@arisegolfclub.com</a></p>
+                </address>
+
+                <h2>Hours</h2>
+                <div class="hours">
+                    <p><strong>Clubhouse:</strong> 6:00 AM - 10:00 PM Daily</p>
+                    <p><strong>Pro Shop:</strong> 6:00 AM - 8:00 PM Daily</p>
+                    <p><strong>Dining:</strong> 7:00 AM - 9:00 PM Daily</p>
+                </div>
+
+            
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="tee-times">Tee Time Reservation</option>
+                            <option value="lessons">Golf Lessons</option>
+                            <option value="events">Events & Tournaments</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="lessons" class="lessons-section">
+            <h2>Book a Lesson</h2>
+            <div class="instructors">
+                <article class="instructor-card">
+                    <img src="images/pro1.jpg" alt="PGA Professional Chris Jonathan" loading="lazy">
+                    <h3>Chris Jonathan</h3>
+                    <p>PGA Master Professional</p>
+                    <p>Specializes in swing mechanics and short game</p>
+                    <a href="#contact-form" class="secondary-button" data-instructor="Chris Jonathan">Book with Chris</a>
+                </article>
+                <article class="instructor-card">
+                    <img src="images/pro2.jpg" alt="PGA Professional Esther Micheal" loading="lazy">
+                    <h3>Esther Micheal</h3>
+                    <p>PGA Class A Professional</p>
+                    <p>Specializes in junior development and course management</p>
+                    <a href="#contact-form" class="secondary-button" data-instructor="Esther Micheal">Book with Esther</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="Arise Golf Club Logo" width="120" height="80" loading="lazy">
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>20 Somachi Road</p>
+                <p>Owerri, Nigeria</p>
+                <p>Phone: (+234) 8061792354</p>
+                <p>Email: info@arisegolfclub.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.jpg" alt="Facebook" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter" width="32" height="32" loading="lazy"></a>
+                    <a href="#"><img src="images/instagram.webp" alt="Instagram" width="32" height="32" loading="lazy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span>✨Jude Iduh✨ Arise Golf Club.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
